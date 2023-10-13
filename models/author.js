@@ -5,10 +5,11 @@ const authorSchema = new Schema(
         last_name: {type: String, required: true},
         first_name: {type: String, required: true},
         born: {type: Date, required: true},
-        died: {type: Date, required: false},
+        died: {type: Date},
         nationality: {type: String, required: true},
         bio: {type: String, required: true},
-        hist_context: {type: Array, required: false}
+        hist_context: {type: String},
+        img: {type: String}
     },
     {timestamps: true}
 )

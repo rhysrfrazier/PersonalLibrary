@@ -3,8 +3,7 @@ const { Schema } = require('mongoose')
 const specialSchema = new Schema (
     {
         title: {type: String, required: true},
-        author_last: {type: String, required: true},
-        author_first: {type: String, required: true},
+        author: {type: Schema.Types.ObjectId, ref: "Author"},
         date: {type: Date},
         publisher: {type: String, required: true},
         editor: {type: String},
