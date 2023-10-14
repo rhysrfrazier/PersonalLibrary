@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-mongoose.
-    connect('mongodb://127.0.0.1:27017/rhysLibraryDatabase')
+mongoose
+    .connect('mongodb://127.0.0.1:27017/rhysLibraryDatabase')
     .then(() => {
         console.log('Successfully connected to MongoDB')
     })
@@ -10,4 +10,5 @@ mongoose.
     })
 
     const db = mongoose.connection
+    
     module.exports = db
