@@ -17,5 +17,8 @@ app.use(bodyParser.json())
 app.get('/', (req,res) => res.send('Welcome?'))
 app.get('/authors', authorController.getAllAuthors)
 app.get('/authors/:id', authorController.getOneAuthor)
+app.post('/authors', authorController.createAuthor)
+app.put('/authors/:id', authorController.updateAuthor)
+app.delete('/authors/:id', authorController.deleteAuthor)
 
 app.listen(PORT, () => console.log(`Listening on port:${PORT}`))
