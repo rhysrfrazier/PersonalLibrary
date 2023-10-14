@@ -8,7 +8,7 @@ const specialSchema = new Schema (
         publisher: {type: String, required: true},
         editor: {type: String},
         editor_bio: {type: String},
-        img: {type: String, required: true},
+        img: {type: String, required: false},
         provenance: {type: String, required: true},
         condition: {type: String, required: true}
     },
