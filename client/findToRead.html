@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="findToRead.css">
+    <script src="https://kit.fontawesome.com/18ad208091.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="findToRead.js"></script>
+    <title>Find Something to Read</title>
+</head>
+
+<body>
+
+    <div id="topBand"></div>
+    <div id="nav">
+        <a id="home" aria-label="home" href="home.HTML"><img id="logo" src="worm.png" aria-hidden="true"></a>
+        <button type="button" id="burger">
+            <i id="icon" class="fa-solid fa-bars fa-lg" title="Full Menu"></i>
+        </button>
+        <div id="menu">
+            <a href="">Coming Soon</a>
+        </div>
+    </div>
+
+    <form class="container">
+        <label for="findBy">Find a book by:</label><br>
+        <input class="userField" id="findBy" placeholder="Select option..." list="searchParams">
+        <datalist id="searchParams">
+            <option class="drop" value="Genre"></option>
+            <option class="drop" value="Sub-Genre"></option>
+            <option class="drop" value="Author"></option>
+        </datalist>
+        <input class="userField" id="input" type="text" placeholder="Enter text...">
+        <a class="btn" id="submit" href="bookResultList.html">Find Books</a>
+    </form>
+
+    <p>OR</p>
+
+    <div class="container">
+        <a class="btn" id="random" href="oneBookResult.html">Generate Random Book</a>
+    </div>
+
+</body>
+
+</html>
