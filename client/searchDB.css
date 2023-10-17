@@ -1,0 +1,128 @@
+body {
+    background-color: #DDE8B9;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #550C18;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: #ffb162;
+    border: 2px;
+}
+
+
+#topBand {
+    width: 100vw;
+    min-height: 3rem;
+    margin: 0;
+    background-color: rgb(22, 60, 87);
+    box-shadow: 2px 2px 2px rgb(166, 177, 131);
+}
+
+#icon {
+    color: #550C18;
+}
+
+.btn {
+    background-color: #ffb162;
+    border-radius: .3rem;
+    border: 0rem;
+    box-shadow: 2px 2px 2px rgb(166, 177, 131);
+    min-height: 2rem;
+    margin: 1rem;
+    color: #550C18;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+.pushed {
+    background-color: rgb(249, 182, 255);
+    border: 8rem solid rgb(166, 177, 131);
+    box-shadow: none;
+}
+
+#logo {
+    border-radius: 50%;
+    border: 4px solid #ffb162;
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+    margin: 0;
+    margin-left: .4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem 0 2rem;
+    min-height: 50vh;
+    width: 80vw;
+    justify-content: space-around;
+}
+
+#allDiv {
+    display: none;
+}
+
+#scDiv {
+    display: none;
+}
+
+#readDiv {
+    display: none;
+}
+
+#novelDiv {
+    display: none;
+}
+
+#typedInput {
+    display: none;
+}
+
+#rateDiv {
+    display: none;
+}
+
+.userField {
+    min-height: 1.9rem;
+    min-width: 80vw;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.userField2 {
+    padding: 0;
+    margin-top: 1rem;
+    max-width: 80vw;
+    min-height: 1.9rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 21px;
+    color: #550C18;
+    margin: 4rem 2.5rem 0 2rem;
+}
+
+#submit {
+    margin-top: 2rem;
+}

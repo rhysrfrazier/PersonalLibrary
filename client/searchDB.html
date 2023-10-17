@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchDB.css">
+    <script src="https://kit.fontawesome.com/18ad208091.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="searchDB.js"></script>
+    <title>Search Books</title>
+</head>
+
+<body>
+    <div id="topBand"></div>
+    <div id="nav">
+        <a id="home" aria-label="home" href="home.HTML"><img id="logo" src="worm.png" aria-hidden="true"></a>
+        <button type="button" id="burger">
+            <i id="icon" class="fa-solid fa-bars fa-lg" title="Full Menu"></i>
+        </button>
+        <div id="menu">
+            <a href="">Coming Soon</a>
+        </div>
+    </div>
+
+    <h1>Search within your library</h1>
+
+    <div class="container">
+
+        <div class="dropContainer" id="colDiv">
+            <label for="collections">Choose a collection to search within:</label><br>
+            <select name="collections" class="userField" id="collections">
+                <option value="">Select one...</option>
+                <option value="books">All</option>
+                <option value="specials">Special Collections</option>
+                <option value="novels">Novels</option>
+            </select>
+        </div>
+
+        <div class="dropContainer" id="allDiv">
+            <label for="allParams">Search all collections by:</label><br>
+            <select name="allParams" class="userField" id="allParams">
+                <option value="">Select one...</option>
+                <option value="title">Title</option>
+                <option value="author.last_name">Author Last Name</option>
+            </select>
+        </div>
+
+
+        <div class="dropContainer" id="scDiv">
+            <label for="scParams">Filter Special Collections by:</label><br>
+            <select name="scParams" class="userField" id="scParams">
+                <option value="">Select one...</option>
+                <option value="title">Title</option>
+                <option value="author.last_name">Author Last Name</option>
+                <option value="date">Year</option>
+            </select>
+        </div>
+
+        <div class="dropContainer" id="novelDiv">
+            <label for="novelParams">Filter novels by:</label><br>
+            <select class="userField" id="novelParams" name="novelParams">
+                <option value="">Select one...</option>
+                <option value="title">Title</option>
+                <option value="author.last_name">Author Last Name</option>
+                <option value="subgenres">Sub-Genre</option>
+                <option value="read">Read</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+
+        <div class="dropContainer" id="readDiv">
+            <label for="readParams">Novels read:</label><br>
+            <select class="userField" id="readParams" name="readParams">
+                <option value="">Select one...</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+
+        <div class="dropContainer" id="rateDiv">
+            <label for="rateParams">Number of stars:</label><br>
+            <select class="userField" id="rateParams" name="rateParams">
+                <option value="">Select one...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <input type="text" class="userField2" id="typedInput" placeholder="search for...">
+
+        <a class="btn" id="submit" href="bookResultList.html">Search</a>
+    </div>
+</body>
+
+</html>

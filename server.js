@@ -7,6 +7,7 @@ const db = require('./db')
 const authorController = require ('./controllers/authorController')
 const novelController = require('./controllers/novelController')
 const specialController = require('./controllers/specialController')
+const comboController = require('./controllers/comboController')
 
 const PORT = process.env.PORT || 3001
 
@@ -17,6 +18,8 @@ app.use(express.json())
 app.use(bodyParser.json())
 
 app.get('/', (req,res) => res.send('Welcome?'))
+
+app.get('/books', comboController.getAllBooks)
 
 app.get('/authors', authorController.getAllAuthors)
 app.get('/authors/:id', authorController.getOneAuthor)
