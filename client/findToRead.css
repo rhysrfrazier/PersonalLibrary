@@ -47,12 +47,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.pushed {
-    background-color: rgb(249, 182, 255);
-    border: 8rem solid rgb(166, 177, 131);
-    box-shadow: none;
-}
-
 #logo {
     border-radius: 50%;
     border: 4px solid #ffb162;
