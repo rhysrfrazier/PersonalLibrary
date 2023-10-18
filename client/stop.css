@@ -1,0 +1,73 @@
+body {
+    background-color: #DDE8B9;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #550C18;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: #ffb162;
+    border: 2px;
+}
+
+#back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: #ffb162;
+    border: 2px;
+}
+
+
+#topBand {
+    width: 100vw;
+    min-height: 3rem;
+    margin: 0;
+    background-color: rgb(22, 60, 87);
+    box-shadow: 2px 2px 2px rgb(166, 177, 131);
+}
+
+.icon {
+    color: #550C18;
+}
+
+#img {
+    display: flex;
+    align-content: center;
+}
+
+#worm {
+    width: 85vw;
+    border-radius: 50%;
+    border: 7px solid #550C18;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    margin: 1rem 2rem 1rem 2rem;
+    text-align:center;
+    font-size: 17px;
+}
+
+#instruction{
+    font-size: 15px;
+}
