@@ -1,0 +1,152 @@
+body {
+    background-color: #DDE8B9;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #550C18;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: #ffb162;
+    border: 2px;
+}
+
+#topBand {
+    width: 100vw;
+    min-height: 3rem;
+    margin: 0;
+    background-color: rgb(22, 60, 87);
+    box-shadow: 2px 2px 2px rgb(166, 177, 131);
+    position: fixed;
+    top: 0;
+}
+
+#icon {
+    color: #550C18;
+}
+
+.btn {
+    background-color: #ffb162;
+    border-radius: .3rem;
+    border: 0rem;
+    box-shadow: 2px 2px 2px rgb(166, 177, 131);
+    margin: 1rem;
+    color: #550C18;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+#logo {
+    border-radius: 50%;
+    border: 4px solid #ffb162;
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+    position: fixed;
+    top: 0;
+    left: 42vw;
+}
+
+#back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: #ffb162;
+    border: 2px;
+}
+
+#main {
+    margin: 6rem 2rem 2rem 2rem;
+}
+
+h1 {
+    margin-bottom: .3rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 18px;
+}
+
+#title {
+    margin-top: .2rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 21px;
+}
+
+#updateDiv{
+    width: 80vw;
+    height: 60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+#rating{
+    min-height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#comment{
+    min-height: 2rem;
+    font-size: 1rem;
+    width:97.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#bkgrnd{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#modal{
+    position: fixed;
+    top: 10rem;
+    right: 2rem;
+    bottom: 15rem;
+    left: 2rem;
+    z-index: 1000;
+    background-color: #D8D4F2;
+    border: 3px solid #550C18;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+#message{
+    font-size: 20px;
+}
+
+#mHome{
+    align-self:center;
+}
+
+#mLogo{
+    border-radius: 50%;
+    border: 4px solid #550C18;
+    max-width: 6.9rem;
+    max-height: 6.9rem;
+}

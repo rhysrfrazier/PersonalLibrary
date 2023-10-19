@@ -16,9 +16,12 @@
     <title>Update Novel</title>
 </head>
 
-<body>
+<body onload="addTitle()">
     <div id="topBand"></div>
     <div id="nav">
+        <button aria-role="link" id="back" onclick="back()">
+            <i class="fa-solid fa-arrow-left fa-lg icon" title="Back"></i>
+        </button>
         <a id="home" aria-label="home" href="home.HTML"><img id="logo" src="worm.png" aria-hidden="true"></a>
         <button type="button" id="burger">
             <i id="icon" class="fa-solid fa-bars fa-lg" title="Full Menu"></i>
@@ -27,6 +30,42 @@
             <a href="">Coming Soon</a>
         </div>
     </div>
+
+    <div id="main">
+
+        <h1>You're updating:</h1>
+        <p id="title"> SAMPLE TEXT</p>
+
+        <div id="updateDiv">
+
+            <div id="rateDiv">
+                <label for="rating">Rate this book out of 5:</label><br>
+                <select name="rating" id="rating">
+                    <option value="">Select one...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+            </div>
+
+            <div id="commentDiv">
+                <label for="comment">Record your thoughts here:</label><br>
+                <input name="comment" type="text" id="comment">
+            </div>
+
+            <button id="submit" class="btn" onclick="updateNovel()">Update Book</button>
+
+        </div>
+    </div>
+
+    <!-- <div id="bkgrnd">
+        <div id="modal">
+            <h1 id="message">All done! Tap Wilbur the Worm and he'll take you home now.</h1>
+            <a id="mHome" aria-label="home" href="home.HTML"><img id="mLogo" src="worm.png" aria-hidden="true"></a>
+        </div>
+    </div> -->
 
 </body>
 

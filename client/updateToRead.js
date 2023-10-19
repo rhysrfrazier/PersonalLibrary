@@ -8,6 +8,7 @@ async function getNovel() {
     const { data: novelObj } = await axios.get(`http://localhost:3001/novels/${titleInput}`) //yoooo, desctructure ALL the things!! And you can rename it too!!
 
     sessionStorage.setItem('id', novelObj._id)
+    sessionStorage.setItem('title', novelObj.title)
 
     makeModal(novelObj)
 }
