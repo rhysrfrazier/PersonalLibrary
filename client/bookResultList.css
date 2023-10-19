@@ -149,3 +149,11 @@ p{
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
+
+#message{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    margin: 33vh 2rem 0 2rem;
+    text-align: center;
+    font-size: 24px;
+}

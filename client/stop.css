@@ -29,6 +29,13 @@ body {
     border: 2px;
 }
 
+#house{
+    color: #550C18;
+    position: fixed;
+    left: .8rem;
+    top: 1.3rem;
+}
+
 
 #topBand {
     width: 100vw;
@@ -40,7 +47,7 @@ body {
     top: 0;
 }
 
-.icon {
+#icon {
     color: #550C18;
 }
 

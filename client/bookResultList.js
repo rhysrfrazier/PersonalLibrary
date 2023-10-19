@@ -6,6 +6,10 @@ function back() {
     history.back()
 }
 
+function halt(){
+    window.location.href = 'stop.html'
+}
+
 //function to get and sort results from db, which calls populate
 async function search() {
     //pulling variables from storage
@@ -42,7 +46,7 @@ async function search() {
     //now you have an array of filtered results that you can loop through
     for (let i = 0; i <= filteredResults.length; i++) {
         if (filteredResults.length === 0) {
-            console.log('No results')
+            noResults()
         } else {
             let book = filteredResults[i]
             populate(book)
@@ -101,4 +105,11 @@ function populate(book) {
     </div>`
 
     //add a click handler for the eventual modal
+}
+
+function noResults(){
+    const message = document.createElement('h1')
+    message.setAttribute('id', 'message')
+    document.body.appendChild(message)
+    message.innerHTML= "Uh Oh! We couldn't find any results for your search. Go back and try something else."
 }

@@ -1,3 +1,8 @@
+//nav functions
+function halt(){
+    window.location.href = 'stop.html'
+}
+
 //static constants
 const chooseCol = document.querySelector('#collections')
 const allParams = document.querySelector('#allParams')

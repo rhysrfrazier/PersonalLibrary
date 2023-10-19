@@ -4,6 +4,10 @@ function back() {
     history.back()
 }
 
+function halt(){
+    window.location.href = 'stop.html'
+}
+
 function addTitle(){
     const title = sessionStorage.getItem('title')
     document.getElementById('title').innerHTML = title.toUpperCase()
