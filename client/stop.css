@@ -36,6 +36,8 @@ body {
     margin: 0;
     background-color: rgb(22, 60, 87);
     box-shadow: 2px 2px 2px rgb(166, 177, 131);
+    position: fixed;
+    top: 0;
 }
 
 .icon {
@@ -43,6 +45,7 @@ body {
 }
 
 #img {
+    margin-top: 3rem;
     display: flex;
     align-content: center;
 }

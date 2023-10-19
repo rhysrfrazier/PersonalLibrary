@@ -30,7 +30,7 @@ app.delete('/authors/:id', authorController.deleteAuthor)
 app.get('/novels', novelController.getAllNovels)
 app.get('/novels/:title', novelController.getOneNovel)
 app.post('/novels', novelController.createNovel)
-app.put('/novels/:title', novelController.updateNovel)
+app.put('/novels/:id', novelController.updateNovel)
 app.delete('/novels/:title', novelController.deleteNovel)
 
 app.get('/specials', specialController.getAllSpecials)

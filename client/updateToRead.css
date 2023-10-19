@@ -38,7 +38,6 @@ body {
     border-radius: .3rem;
     border: 0rem;
     box-shadow: 2px 2px 2px rgb(166, 177, 131);
-    min-height: 2rem;
     margin: 1rem;
     color: #550C18;
     font-size: 13px;
@@ -46,7 +45,6 @@ body {
     text-align: center;
     text-decoration: none;
     line-height: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #logo {
@@ -61,65 +59,82 @@ body {
     top: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 6rem 2rem 0 2rem;
+#main {
+    margin: 6rem 2rem 2rem 2rem;
 }
 
-label {
+h1 {
     font-family: 'Dosis', sans-serif;
     font-family: 'Young Serif', serif;
-    color: #550C18;
     font-size: 21px;
-    margin-bottom: 1rem;
 }
 
-.userField{
+.inputField {
     min-height: 1.9rem;
+    min-width: 80vw;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#input{
-    margin-top: 1rem;
+#userInput {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    justify-content: space-around;
 }
 
-#submit{
-    margin-top:2.5rem;
+
+#bkgrnd{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#modal{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    background-color: #D8D4F2;
+    border: 3px solid #550C18;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+#x{
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+}
+
+#mTitle{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
+    margin-bottom: .5rem;
+    font-size: 28px;
+}
+
+#mAuthor{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Young Serif', serif;
 }
 
 p{
-    text-align: center;
-    font-weight:700;
-    margin-top: 3rem;
-    position: relative;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
-/* https://unclebigbay.com/how-to-add-horizontal-lines-before-and-after-a-text-in-html */
-p:before{
-    content:" ";
-    height: 2px;
-    width:15vw;
-    background:#550C18;
-    display:block;
-    position:absolute;
-    top: 50%;
-    left: 20%;
+#mImg{
+    margin-bottom: 1rem;
 }
-
-P:after{
-    content:" ";
-    height: 2px;
-    width:15vw;
-    background:#550C18;
-    display:block;
-    position:absolute;
-    top: 50%;
-    right: 20%;
-}
-
-#random{
-    margin-top: 2.2rem;
-}
-

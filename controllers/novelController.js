@@ -48,14 +48,14 @@ async function createNovel(req,res) {
         await novel.save()
         return res.status(201).json({novel})
     } catch (e) {
-        return res.status(500).send('Server error')
+        return res.status(500).send(e.message)
     }
 }
 
 async function updateNovel(req, res) {
     try{
-        const input = req.params.title
-        const novel = await Novel.findOneAndUpdate({title: input}, req.body, {new: true})
+        const id = req.params.id
+        const novel = await Novel.findByIdAndUpdate(id, req.body, {new: true})
         if (novel) {
             return res.status(200).json(novel)
         }

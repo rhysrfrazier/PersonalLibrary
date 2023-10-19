@@ -93,17 +93,12 @@ function populate(book) {
         <img class="img" src=${book.img}>
     </div>
     <div class="dataSide">
-        <h1 class="title">${book.title}</h1>
+        <h1 class="title">${book.title.toUpperCase()}</h1>
         <h2 class="author">${book.author.first_name} ${book.author.last_name}</h2>
         <p>${read}</p>
         <p>${rating}</p>
         <p>${yr}</p>
     </div>`
 
-    //add a click handler
-}
-
-//TEST
-function test() {
-    populate()
+    //add a click handler for the eventual modal
 }
