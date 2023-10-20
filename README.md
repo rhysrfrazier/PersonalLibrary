@@ -1,7 +1,7 @@
 # Personal Library
 A fullstack application for personal library management. Full CRUD through the back end, and read and update functionality (so far) in the front end.
 ## Vision
-The long-term goal for this app is an all-in one system for managing a personal library, including full front end CRUD and intuitive user flows. If you've ever found yourself unable to remember whether you read all the books in a series; if your e-reader is dead but you simply must know whether you already own a copy of a book a relative want to gift you; or if you just want a full list of every book in your library in your back pocket because you ~~have a problem and want to cary information about your books like some people cary wallet-size photos of their kids~~ love books, this app is meant to help!
+The long-term goal for this app is an all-in one system for managing a personal library, including full front end CRUD and intuitive user flows. If you've ever found yourself unable to remember whether you read all the books in a series; if your e-reader is dead but you simply must know whether you already own a copy of a book a relative want to gift you; or if you just want a full list of every book in your library in your back pocket because you ~~have a problem and want to carry information about your books like some people cary wallet-size photos of their kids~~ love books, this app is meant to help!
 
 [Here](https://app.diagrams.net/#G1SZsPjMf_hK2G27OZyC_7a-4iw9ece2qr)'s the rough wireframe for user flows.
 
