@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="browse.css">
     <script src="https://kit.fontawesome.com/18ad208091.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,31 +12,28 @@
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Young+Serif&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="home.js"></script>
-    <title>Personal Library</title>
+    <script defer src="browse.js"></script>
+    <title>Result List</title>
 </head>
 
-<body onload="load()">
+<body onload="apiCall()">
     <div id="topBand"></div>
     <div id="nav">
+        <button aria-role="link" id="back" onclick="back()">
+            <i class="fa-solid fa-arrow-left fa-lg icon" title="Back"></i>
+        </button>
+        <a id="home" aria-label="home" href="home.HTML"><img id="logo" src="worm.png" aria-hidden="true"></a>
         <button type="button" id="burger" onclick="reveal()">
-            <i id="icon" class="fa-solid fa-bars fa-lg" title="Full Menu"></i>
+            <i class="fa-solid fa-bars fa-lg icon" title="Full Menu"></i>
         </button>
         <div id="menu">
-            <a class="item" href="browse.html">Browse Full Database</a>
+            <a class="item" href="">Browse Full Database</a>
             <a class="item" href="">I Bought a New Book!</a>
             <a class="item" href="">I Just Got Rid of a Book</a>
         </div>
     </div>
-    <div id="header">
-        <img id=logo src="worm.png" alt="Wilbur the Bookworm">
-        <h1 >Welcome! What would you like to do?</h1>
-    </div>
-    <div id="buttons">
-        <a class="btn" id="FStR" href="stop.html">Find Something to Read</a>
-        <a class="btn" id="UaNtR" href="updateToRead.html">Update a Novel to "Read"</a>
-        <a class="btn" id="SearchDB" href="searchDB.html">Search Database</a>
-    </div>
+    <ul id="resultList">
+    </ul>
 
 </body>
 
