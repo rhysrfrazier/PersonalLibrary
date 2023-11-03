@@ -7,7 +7,7 @@ const addSpecials = async () => {
     const specials = [
         {
             title: 'Adam Bede',
-            author: '65298af181ed9d755c43d303',
+            author: '65298af181ed9d755c43d303', //oh my god you can just do Author.whatever??? maybe?
             date: '1906',
             publisher: "Everyman's Library (Richard Clay & Sons, Ltd.",
             editor: 'Ernest Rhys',
