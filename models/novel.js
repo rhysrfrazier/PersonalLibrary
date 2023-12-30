@@ -7,7 +7,7 @@ const novelSchema = new Schema(
         genre_main: {type: String, required: true},
         subgenres: {type: Array, required: true},
         synopsis: {type: String, required: true},
-        img: {type: String, required: false},
+        img: {type: String, maxLength: 1000000000},
         read: {type: Boolean, required: true},
         rating: {type: Number, min: 1, max: 5, required: false},
         comments: {type: String, required: false}

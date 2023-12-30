@@ -9,7 +9,7 @@ const authorSchema = new Schema(
         nationality: {type: String, required: true},
         bio: {type: String, required: true},
         hist_context: {type: String},
-        img: {type: String}
+        img: {type: String, maxLength: 1000000000}
     },
     {timestamps: true}
 )
