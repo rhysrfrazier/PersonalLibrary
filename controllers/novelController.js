@@ -24,7 +24,7 @@ async function getAllNovels (req, res){
         })
         return res.json(novels)
     } catch (e) {
-        return res.status(500).send('Server error.')
+        return res.status(500).send(e.message)
     }
 }
 
